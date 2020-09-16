@@ -1,1 +1,1 @@
-web: gunicorn bimerpage.wsgi
+web: gunicorn bimer_page.wsgi
