@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>BIMER</title>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+
+
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid"> <img id="logobimer" src="{% static 'blog/modified (1).png' %}" href="{% url 'blog-home' %}" ><a class="navbar-brand" href="{% url 'blog-home' %}"> <strong>BIMER</strong></a>  <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div
+                    class="collapse navbar-collapse text-left" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'blog-about' %}">Sobre BIMER</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="{% url 'blog-blog' %}">Blog</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Medios</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Catalogos</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
+
+    </header>
+ 
+ 
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-8">
+          {% block content %}{% endblock %}
+      </div>
+    </main>
+
+
+
+     <!-- Start: Pretty Footer -->
+     <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><a href="#">soluciones<span> BIMER</span></a></h3>
+                <p class="links"></p>
+                <p class="company-name">Soluciones BIMER © 2020</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span"></span>Toluca, México</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"><br><a href="http://solucionesbimer.com/#">722 362 0099</a><br><br></p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="#" target="_blank">ventas@solucionesbimer.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>Sobre Soluciones BIMER</h4>
+                <p>Nos enfocamos al mantenimiento, reparación y venta de equipo médico. Tenemos como misión consolidar nuestros clientes brindando la mejor calidad en el servicio.<br></p>
+                <div class="social-links social-icons"></div>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Pretty Footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

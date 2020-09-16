@@ -1,0 +1,141 @@
+{% extends "blog/base.html" %} {% block content %}
+
+<style>
+  #promo {
+    text-align: center;
+    padding: 60px;
+    background: url("/static/blog/medical_equipment_280618.jpg") no-repeat;
+    background-size: cover;
+  }
+  div.jumbotron.hero-nature {
+    background-image: url("static/blog/Autoclave+Repair+Service.jpeg");
+  }
+  div.jumbotron.hero-photography {
+    background-image: url("static/blog/STERILIZATION-AND-DECONTAMINATION.jpg");
+  }
+  div.jumbotron.hero-technology {
+    background-image: url("static/blog/medical.jpg");
+  }
+</style>
+
+<div id="promo">
+  <div class="jumbotron">
+    <h1 class="text-light">Podemos repararlo</h1>
+    <p class="text-light">Servicio de reparación de equipo médico</p>
+    <p>
+      <a class="btn btn-primary text-light" role="button"
+        >llamanos al&nbsp;<br />722 362 0099&nbsp;</a
+      >
+    </p>
+  </div>
+</div>
+<div class="container" id="parrafo">
+  <h1>BIMER</h1>
+  <p>
+    BIMER es una empresa de reparación electrónica industrial propiedad de
+    ingenieros biomédicos en México. Hemos estado brindando servicio a una gama
+    completa de productos. Nuestras reparaciones electrónicas, incluyen todo
+    tipo de modelos que van de actuales e incluso obsoletos. Este es un
+    servicio, único y de alta necesidad que nadie más ofrece. &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp;<br /><br />Nuestro equipo evaluará y cotizará su unidad
+    el mismo día, y nunca se cobrará una tarifa por este servicio. Con
+    documentación de más de 1000 fabricantes, seguimos siendo el mejor recurso
+    para el mantenimiento de equipo médico.<br /><br />
+  </p>
+</div>
+<div id="rapara">
+  <!-- Start: best carousel slide -->
+  <section id="carousel">
+    <!-- Start: Carousel Hero -->
+    <div class="carousel slide" data-ride="carousel" id="carousel-1">
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item">
+          <div class="jumbotron pulse animated hero-nature carousel-hero">
+            <h1 class="hero-title">Nuestras reparaciones</h1>
+            <p class="hero-subtitle">
+              En el centro de nuestras reparaciones está la confianza de que
+              nuestro servicio de ninguna manera causa daño ambiental. Por el
+              contrario, si la electrónica industrial no se repara, terminan en
+              vertederos de todo el mundo.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="jumbotron pulse animated hero-photography carousel-hero">
+            <h1 class="hero-title">Técnicas y reparación de calidad</h1>
+            <p class="hero-subtitle">
+              El trabajo de reparación que realizamos cubre una gama completa de
+              equipos. A las pocas horas de haber sido recibido su llamada, su
+              equipo será analizado, evaluado y cotizado.&nbsp;
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="jumbotron pulse animated hero-technology carousel-hero">
+            <h1 class="hero-title">Nuestro Servicio</h1>
+            <p class="hero-subtitle">
+              Los principios básicos para minimizar los costos de reparación y
+              servicio del equipo son los mismos. &nbsp;Y &nbsp;aunque trata de
+              grandes empresas o pequeñas. Le presentamos un análisis más
+              detallado de los principios de ahorro de costos y cómo aplicarlos
+              a su negocio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a
+          class="carousel-control-prev"
+          href="#carousel-1"
+          role="button"
+          data-slide="prev"
+          ><i class="fa fa-chevron-left"></i
+          ><span class="sr-only">Previous</span></a
+        ><a
+          class="carousel-control-next"
+          href="#carousel-1"
+          role="button"
+          data-slide="next"
+          ><i class="fa fa-chevron-right"></i
+          ><span class="sr-only">Next</span></a
+        >
+      </div>
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-1" data-slide-to="0"></li>
+        <li data-target="#carousel-1" data-slide-to="1" class="active"></li>
+        <li data-target="#carousel-1" data-slide-to="2"></li>
+      </ol>
+    </div>
+    <!-- End: Carousel Hero -->
+  </section>
+  <!-- End: best carousel slide -->
+</div>
+<div class="container">
+  <div>
+    <div class="row">
+      <div class="col">
+        <h3><br />LA MEJOR GARANTÍA&nbsp;<br /><br /></h3>
+        <p>
+          Nuestra garantía de 6 meses es la mejor. No solo reparamos la unidad o
+          placa de circuito; reacondicionamos las unidades para que estén lo más
+          cerca posible de como nuevas. Esta garantía sirve para ofrecerle
+          tranquilidad a usted y a su empresa.
+        </p>
+      </div>
+      <div class="col">
+        <iframe
+          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsolucionesbimer%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+          width="340"
+          height="500"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowTransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
